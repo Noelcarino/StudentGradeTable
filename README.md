@@ -2,10 +2,10 @@
 `A Full-Stack CRUD Application that allows you to keep track of student grades.`
 
 # Features
-  1. User can Add Student Grade
-  2. User can View Average Grade
-  3. User can Delete Student Grade
-  
+  1. User can Add Student Grade.
+  2. User can View Average Grade.
+  3. User can Delete Student Grade.
+  4. User can use application on Desktop, iPhone 6/7/8, iPad.
 # Technologies Used
   1. React
   2. Bootstrap
