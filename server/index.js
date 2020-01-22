@@ -10,5 +10,5 @@ server.use(middleware);
 server.use('/api', endpoints);
 server.listen(3001, () => {
   // eslint-disable-next-line no-console
-  console.log('JSON Server listening on port 3001\n');
+  console.log('JSON Server listening on port 3001 ^_^ :D >_> \n');
 });
