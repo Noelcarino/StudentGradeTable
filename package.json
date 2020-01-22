@@ -2,10 +2,10 @@
   "name": "studentgradetable",
   "version": "1.0.0",
   "description": "The Student Grade Table: Written in React",
-  "main": "server/index.js",
+  "main": "server/public/index.js",
   "scripts": {
     "client": "webpack-dev-server",
-    "start": "node server/index.js",
+    "start": "node server/public/index.js",
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel start client"
   },
