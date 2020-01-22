@@ -1,0 +1,28 @@
+{
+  "grades": [
+    {
+      "name": "Dan Paschal",
+      "course": "Web Development",
+      "grade": 100,
+      "id": 1
+    },
+    {
+      "name": "William",
+      "course": "Web Development",
+      "grade": 120,
+      "id": 2
+    },
+    {
+      "name": "Brett",
+      "course": "Web Development",
+      "grade": 87,
+      "id": 3
+    },
+    {
+      "name": "Noel",
+      "course": "Web Development",
+      "grade": 100,
+      "id": 4
+    }
+  ]
+}
