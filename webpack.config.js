@@ -1,7 +1,7 @@
 const path = require('path');
 
 const srcPath = path.resolve(__dirname, 'client');
-const publicPath = path.resolve(__dirname, 'server/public/');
+const publicPath = path.resolve(__dirname, 'server/public');
 
 module.exports = {
   resolve: {
@@ -36,12 +36,7 @@ module.exports = {
     watchContentBase: true,
     stats: 'minimal',
     proxy: {
-      '/api': {
-        target: 'http://localhost',
-        headers: {
-          Host: 'StudentGradeTable.localhost'
-        }
-      }
+      '/api': 'http://localhost:3001'
     }
   }
 };

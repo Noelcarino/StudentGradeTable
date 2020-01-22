@@ -2,10 +2,10 @@
   "name": "studentgradetable",
   "version": "1.0.0",
   "description": "The Student Grade Table: Written in React",
-  "main": "server/public/index.js",
+  "main": "server/index.js",
   "scripts": {
     "client": "webpack-dev-server",
-    "start": "node server/public/index.js",
+    "start": "node server/index.js",
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel start client"
   },
@@ -54,7 +54,7 @@
   "license": "ISC",
   "homepage": "https://github.com/Noelcarino/StudentGradeTable#readme",
   "eslintIgnore": [
-    "server/public/index.js"
+    "server/public/main.js"
   ],
   "eslintConfig": {
     "env": {
