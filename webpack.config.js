@@ -36,7 +36,12 @@ module.exports = {
     watchContentBase: true,
     stats: 'minimal',
     proxy: {
-      '/api': 'http://localhost:3001'
+      '/api':  {
+        target: 'http://localhost',
+        headers: {
+          Host: 'studentgradetable.localhost'
+        }
+      }
     }
   }
 };
