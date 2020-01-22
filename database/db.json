@@ -23,6 +23,12 @@
       "course": "costco",
       "grade": 99,
       "id": 5
+    },
+    {
+      "name": "Noel",
+      "course": "Web Developmentr",
+      "grade": 98,
+      "id": 6
     }
   ]
 }

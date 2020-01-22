@@ -38,7 +38,7 @@ module.exports = {
       '/api': {
         target: 'http://localhost',
         headers: {
-          Host: 'studentgradetable.localhost'
+          Host: 'StudentGradeTable.localhost'
         }
       }
     }
