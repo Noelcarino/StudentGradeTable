@@ -77,7 +77,7 @@ class App extends React.Component {
     } else {
       return (
         <div>
-          No Grades Available
+          No Grades Available :(
         </div>
       );
     }
