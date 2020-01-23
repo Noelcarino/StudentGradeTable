@@ -61,10 +61,10 @@ class App extends React.Component {
               <Header averageGrade={this.getAverageGrade}/>
             </div>
             <div className="container-fluid row m-auto py-3 p-0">
-              <div className="container-fluid col-md-4 col-lg-3  mx-auto mb-3 p-0">
+              <div className="container-fluid col-md-4 col-lg-4  mx-auto mb-3 px-0">
                 <GradeForm addNewGrade={this.addNewGrade} />
               </div>
-              <div className="container-fluid col-md-7 col-lg-8  mx-auto mb-3 p-0">
+              <div className="container-fluid col-md-7 col-lg-7  mx-auto mb-3 p-0">
                 <GradeTable studentData={this.state.gradeArray} deleteStudent={this.deleteGrade} />
               </div>
             </div>
