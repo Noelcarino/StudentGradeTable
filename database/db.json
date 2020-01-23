@@ -1,28 +1,22 @@
 {
   "grades": [
     {
-      "name": "Dan Paschal",
+      "name": "Noel",
       "course": "Web Development",
       "grade": 100,
       "id": 1
     },
     {
-      "name": "William",
-      "course": "Web Development",
-      "grade": 120,
-      "id": 2
-    },
-    {
-      "name": "Brett",
-      "course": "Web Development",
-      "grade": 87,
-      "id": 3
-    },
-    {
-      "name": "LeonOnirac",
-      "course": "Web Development",
-      "grade": 100,
+      "name": "Mr Albright",
+      "course": "Portfolio 101",
+      "grade": 250,
       "id": 4
+    },
+    {
+      "name": "Mr Davis",
+      "course": "Ubuntu Server 101",
+      "grade": 250,
+      "id": 5
     }
   ]
 }

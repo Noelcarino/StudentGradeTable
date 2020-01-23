@@ -53,34 +53,31 @@ class App extends React.Component {
       });
   }
   render() {
-    if (this.state.gradeArray.length !== 0) {
-      return (
-        <div style={{ 'minHeight': '90vh', 'maxHeight': '90vh', 'minWidth': '90vw', 'maxWidth': '90vw' }}className="container-fluid mx-auto p-0 row">
-          <div className="container-fluid col-12 mx-auto p-0">
-            <div className="container-fluid row m-auto p-3">
-              <Header averageGrade={this.getAverageGrade}/>
-            </div>
-            <div className="container-fluid row m-auto py-3 p-0">
-              <div className="container-fluid col-md-4 col-lg-4  mx-auto mb-3 px-0">
-                <GradeForm addNewGrade={this.addNewGrade} />
-              </div>
-              <div className="container-fluid col-md-7 col-lg-7  mx-auto mb-3 p-0">
-                <GradeTable studentData={this.state.gradeArray} deleteStudent={this.deleteGrade} />
-              </div>
-            </div>
-          </div>
-          <div className="container-fluid col mx-auto p-0 text-center text-muted">
-            © Noel Angelo Carino
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <div>
-          No Grades Available :(
-        </div>
-      );
+    let elementToRender;
+    if (this.state.gradeArray.length !== 0){
+      elementToRender =  <GradeTable studentData={this.state.gradeArray} deleteStudent={this.deleteGrade} />;
+
     }
+    return (
+      <div style={{ 'minHeight': '90vh', 'maxHeight': '90vh', 'minWidth': '90vw', 'maxWidth': '90vw' }}className="container-fluid mx-auto p-0 row">
+        <div className="container-fluid col-12 mx-auto p-0">
+          <div className="container-fluid row m-auto p-3">
+            <Header averageGrade={this.getAverageGrade}/>
+          </div>
+          <div className="container-fluid row m-auto py-3 p-0">
+            <div className="container-fluid col-md-4 col-lg-4  mx-auto mb-3 px-0">
+              <GradeForm addNewGrade={this.addNewGrade} />
+            </div>
+            <div className="container-fluid col-md-7 col-lg-7  mx-auto mb-3 p-0">
+              {elementToRender}
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid col mx-auto p-0 text-center text-muted">
+          © Noel Angelo Carino
+        </div>
+      </div> 
+    );
   }
 }
 export default App;
