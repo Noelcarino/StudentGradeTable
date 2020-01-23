@@ -41,7 +41,7 @@ export default class GradeForm extends React.Component {
   }
   render() {
     return (
-      <div className="container-fluid mx-auto border d-flex flex-column bg-light text-center">
+      <div className="container-fluid mx-auto border d-flex flex-column bg-light text-center px-1">
         <h3>
              Add Student
         </h3>
@@ -58,9 +58,9 @@ export default class GradeForm extends React.Component {
             <span className="p-1 input-group-text"><i className="fa fa-graduation-cap"></i></span>
             <input type="number" name="grade" placeholder="Grade" value={this.state.grade} onChange={this.handleChange} />
           </div>
-          <div className="m-1 d-flex justify-content-end">
-            <button type="submit" className="btn btn-success mr-1">Add</button>
-            <button type="reset" className="btn btn-secondary">Cancel</button>
+          <div className="m-1 d-flex justify-content-beginning p-2">
+            <button type="submit" className="btn btn-success mr-1 px-3">Add</button>
+            <button type="reset" className="btn btn-secondary px-3">Cancel</button>
           </div>
         </form>
       </div>
