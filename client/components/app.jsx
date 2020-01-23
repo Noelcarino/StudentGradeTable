@@ -55,7 +55,7 @@ class App extends React.Component {
   render() {
     if (this.state.gradeArray.length !== 0) {
       return (
-        <div style={{ 'minHeight': '90vh', 'maxHeight': '90vh', 'minWidth': '90vw', 'maxWidth': '90vw' }}className="container-fluid m-auto p-0 row">
+        <div style={{ 'minHeight': '90vh', 'maxHeight': '90vh', 'minWidth': '90vw', 'maxWidth': '90vw' }}className="container-fluid mx-auto p-0 row">
           <div className="container-fluid col-12 mx-auto p-0">
             <div className="container-fluid row m-auto p-3">
               <Header averageGrade={this.getAverageGrade}/>
